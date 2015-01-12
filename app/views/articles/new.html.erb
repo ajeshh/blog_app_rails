@@ -1,0 +1,19 @@
+<div id="container">
+<div>
+
+<%= form_for @article do |f| %>
+	<div>
+	    <%= f.text_field :title, placeholder: "title"%>
+	</div>
+	<div>
+	    <%= f.text_field :author, placeholder: "author"%>
+	</div>
+	 <div>
+	    <%= f.text_area :content, placeholder: "Content" %>
+	</div>
+	<div>
+	    <%= f.submit "save article" %>
+	</div>
+</div>
+</div>
+<% end %>
